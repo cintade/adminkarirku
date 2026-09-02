@@ -16,6 +16,11 @@ jobs:
       - name: Checkout kode
         uses: actions/checkout@v4
 
+      - name: Debug - cek isi folder
+        run: |
+          pwd
+          ls -la
+
       - name: Login ke GitHub Container Registry
         uses: docker/login-action@v3
         with:
